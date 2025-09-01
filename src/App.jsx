@@ -1,9 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 
 function App() {
-  return <h1 className="text-dark-gradient">Fortune</h1>;
+  return <h1 className="font-noto-sans">Fortune</h1>;
 }
 
 export default App;

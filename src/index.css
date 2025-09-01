@@ -14,6 +14,9 @@
   --color-red-500: hsl(3, 71%, 56%);
   --color-red-700: hsl(3, 77%, 44%);
   --font-noto-sans: "Noto Sans", sans-serif;
+  --text-light: 400;
+  --text-meidum: 500;
+  --text-bold: 700;
 }
 
 .bg-dark-gradient {

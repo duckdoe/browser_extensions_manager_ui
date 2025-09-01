@@ -1,7 +1,13 @@
 import { useState } from "react";
-
+import Switch from "./Switch.jsx";
+import Remove from "./Remove.jsx";
 function App() {
-  return <h1 className="font-noto-sans">Fortune</h1>;
+  return (
+    <>
+      <Switch />
+      <Remove />
+    </>
+  );
 }
 
 export default App;

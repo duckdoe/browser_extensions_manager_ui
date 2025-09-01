@@ -26,3 +26,11 @@
 .bg-light-gradient {
   background: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
 }
+
+.p-small {
+  padding: 0.075rem;
+}
+
+.left-small {
+  left: 0.85rem;
+}

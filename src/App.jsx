@@ -3,6 +3,7 @@ import Switch from "./Switch.jsx";
 import Remove from "./Remove.jsx";
 import Header from "./Header.jsx";
 import Navigation from "./Navigation.jsx";
+import Card from "./Card.jsx";
 
 function App() {
   const [extension, setExtension] = useState([]);
@@ -11,7 +12,7 @@ function App() {
       .then((res) => {
         return res.json();
       })
-      .then((data) => console.log(data));
+      .then((data) => setExtension(data));
   }, []);
   return (
     <>
@@ -19,6 +20,9 @@ function App() {
       <Navigation />
       <Switch />
       <Remove />
+      {extension.map((item, index) => {
+        return <Card data={item} key={index} />;
+      })}
     </>
   );
 }

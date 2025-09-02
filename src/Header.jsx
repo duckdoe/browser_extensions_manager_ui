@@ -17,7 +17,7 @@ function Header() {
   }, [mode]);
 
   return (
-    <header className="flex justify-between m-4 p-2 shadow-md">
+    <header className="flex justify-between m-4 p-2 shadow-md bg-neutral-0 rounded-md">
       <img src={Logo} alt="Extensions Manager Logo" className="inline-block" />
       <button onClick={handleClick} className="p-3 bg-neutral-100 rounded-2xl">
         <img

@@ -9,20 +9,21 @@ function Switch() {
   }
 
   useEffect(() => {
-    let circle = document.getElementById("circle");
-    let buttonToggle = document.getElementById("buttonToggle");
-    buttonToggle.classList.toggle("bg-red-400");
-    circle.classList.toggle("left-small");
-    circle.classList.toggle("left-0");
+    let c = document.getElementById("circle");
+    let bT = document.getElementById("buttonToggle");
+    bT.classList.toggle("bg-red-500");
+    c.classList.toggle("left-small");
+    c.classList.toggle("left-0");
   }, [toggle]);
+
   return (
     <button
-      className="bg-neutral-300 w-8 rounded-2xl p-small"
+      className="bg-neutral-300 w-8 rounded-2xl p-small duration-100 cursor-pointer"
       onClick={handleClick}
       id="buttonToggle"
     >
       <div
-        className="bg-neutral-0 w-4 h-4 rounded-full relative left-0"
+        className="bg-neutral-0 w-4 h-4 rounded-full relative left-0 duration-150 cursor-pointer"
         id="circle"
       ></div>
     </button>

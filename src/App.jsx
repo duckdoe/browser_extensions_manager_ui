@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import Switch from "./Switch.jsx";
-import Remove from "./Remove.jsx";
 import Header from "./Header.jsx";
 import Navigation from "./Navigation.jsx";
 import Card from "./Card.jsx";
@@ -15,15 +13,13 @@ function App() {
       .then((data) => setExtension(data));
   }, []);
   return (
-    <>
+    <div className="px-4">
       <Header />
       <Navigation />
-      <Switch />
-      <Remove />
-      {extension.map((item, index) => {
-        return <Card data={item} key={index} />;
-      })}
-    </>
+      {extension.map((item, index) => (
+        <Card data={item} key={index} />
+      ))}
+    </div>
   );
 }
 

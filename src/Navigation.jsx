@@ -1,6 +1,6 @@
 function Navigation() {
   return (
-    <nav className="flex flex-col items-center">
+    <nav className="flex flex-col items-center mb-12">
       <h1 className="font-bold text-3xl text-center mt-8 text-neutral-900 mb-4">
         Extensions List
       </h1>
